@@ -1,0 +1,8 @@
+#main-container {
+  color: $general-text-color;
+  background-color: #1e1e1e;
+  .page-wrapper {
+    margin: 0 auto;
+    width: clamp(343px, #{calc(1219 / 1440 * 100)}vw, 1219px);
+  }
+}

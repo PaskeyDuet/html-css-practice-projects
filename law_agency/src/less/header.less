@@ -1,0 +1,94 @@
+.header {
+	display: flex;
+	align-items: center;
+	padding: 30px 0;
+	box-sizing: border-box;
+	position: relative;
+	z-index: 20;
+
+	&--fixed {
+		justify-content: space-around;
+		width: 100%;
+		padding: 20px 150px;
+		background: @blue;
+		position: fixed;
+		top: 0;
+		left: 0;
+		box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.07);
+		animation-name: show-header;
+		animation-duration: 0.5s;
+		animation-direction: backwards;
+
+		.lg-block({
+			padding: 20px 50px;
+		});
+
+		.md-block({
+			padding: 20px;
+		});
+	}
+
+	&__nav {
+		flex-grow: 1;
+	}
+
+	&__navBody {
+		margin-left: auto;
+
+		.md-block({
+			margin-right: auto;
+		});
+	}
+
+	&__link {
+		margin: 0 62px;
+		color: @white;
+		transition: color .4s ease;
+
+		.lg-block({
+			margin: 0 36px;
+		});
+
+		.sm-block({
+			font-size: 14px;
+			margin: 0 10px;
+		});
+
+		&:hover, &:focus {
+			color: @gold;
+		}
+
+		&:active {
+			color: darken(@gold, 20%);
+		}
+	}
+
+	&__info {
+		margin-left: 58px;
+
+		.lg-block({
+			margin-left: 10px;
+		});
+
+		a {
+			display: block;
+			margin-top: 4px;
+			font-size: 20px;
+
+
+			&::before {
+				content: '';
+				display: inline-block;
+				vertical-align: middle;
+				width: 20px;
+				height: 20px;
+				margin-right: 10px;
+				background: url(../img/header-phone.svg) no-repeat center / contain;
+			}
+		}
+
+		.md-block({
+			display: none;
+		});
+	}
+}

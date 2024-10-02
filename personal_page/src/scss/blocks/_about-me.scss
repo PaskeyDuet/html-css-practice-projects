@@ -1,0 +1,70 @@
+.about-me {
+  &__heading {
+    @include font("Labil-Grotesk-Medium", 24, 48, 140%);
+  }
+  &__facts-block {
+    @include row;
+    justify-content: space-between;
+    margin-top: 45px;
+    gap: 50px max(32px, 4.1021%);
+  }
+  &__fact {
+    max-width: calc(100% / 2 - 10%);
+    .fact__heading {
+      @include font("Labil-Grotesk-Medium", 20, 32, 130%);
+      margin-bottom: 24px;
+    }
+    .fact__text {
+      @include font("Labil-Grotesk-Regular", 14, 20, 140%);
+    }
+  }
+  &__large-text {
+    margin: 120px;
+    // display: inline;
+    display: none;
+    @include font("Labil-Grotesk-Medium", 48, 140, 110%);
+
+    span {
+      margin: 75px 0;
+      margin-left: -800px;
+      position: absolute;
+      white-space: nowrap;
+      background-color: #141414;
+      animation: marquee 32s linear infinite;
+    }
+    .track {
+      position: absolute;
+      white-space: nowrap;
+      will-change: transform;
+    }
+    @keyframes marquee {
+      from {
+        transform: translateX(0);
+      }
+      to {
+        transform: translateX(-50%);
+      }
+    }
+  }
+  .about-me__add-info {
+    display: flex;
+    margin-top: 150px;
+    gap: 40px;
+    .about-me__left-text {
+      display: flex;
+      flex-flow: column;
+      width: calc(75%);
+    }
+    .add-info__heading {
+      @include font("Labil-Grotesk-Medium", 24, 64, 110%);
+    }
+    .add-info__text {
+      @include font("Labil-Grotesk-Regular", 16, 48, 130%);
+    }
+    .add-info__author {
+      @include font("Labil-Grotesk-Regular", 14, 20, 140%);
+      display: flex;
+      align-items: flex-end;
+    }
+  }
+}

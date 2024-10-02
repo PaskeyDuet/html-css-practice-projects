@@ -1,0 +1,72 @@
+.form {
+	&__input {
+		display: block;
+		max-width: 360px;
+
+		input, textarea {
+			display: inherit;
+			width: inherit;
+			height: inherit;
+			border: inherit;
+			box-sizing: border-box;
+			font-family: 'Franklin Gothic', sans-serif;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 18px;
+			color: #B9C2CC;
+
+			&::placeholder {
+				color: #B9C2CC;
+			}
+		}
+
+		&--wrong {
+			border: 1px solid red !important;
+			margin-bottom: 27px !important;
+		}
+
+		&::after {
+			content: attr(data-error);
+			display: block;
+			text-align: left !important;
+			color: red;
+			font-size: 14px;
+			padding-left: 4px;
+			margin-bottom: 10px;
+		}
+	}
+
+	&__textarea {
+		min-height: 140px;
+		margin-bottom: 0 !important;
+
+		textarea {
+			display: block;
+			width: 100% !important;
+			min-height: inherit !important;
+			padding-top: 10px !important;
+			resize: none;
+		}
+	}
+
+	&__btn {
+		font-size: 18px;
+		line-height: 20px;
+		letter-spacing: 0.22em;
+		text-transform: uppercase;
+		font-weight: 600;
+		color: @gold;
+		background-color: transparent;
+		border-color: transparent;
+		border-style: solid;
+		border-bottom: 1px solid @gold;
+
+		&:hover, &:active, &:focus {
+			border-color: @gold;
+		}
+
+		&:active {
+			border-style: inset;
+		}
+	}
+}

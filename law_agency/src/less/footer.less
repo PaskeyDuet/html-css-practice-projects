@@ -1,0 +1,43 @@
+.footer {
+
+	&__wrapper {
+		display: flex;
+		align-items: center;
+		padding: 30px 0;
+
+		.xs-block({
+			flex-direction: column;
+		});
+	}
+
+	&__nav {
+		margin-left: auto;
+
+		.md-block({
+			margin-right: auto;
+		});
+
+		.xs-block({
+			margin: 20px auto;
+		});
+	}
+
+	&__link {
+		margin-left: 124px;
+		color: @black-lighten;
+		transition: color .4s ease;
+
+		.md-block({
+			margin-left: 72px;
+		});
+
+		.sm-block({
+			font-size: 14px;
+			margin: 0 5px;
+		});
+
+		&:hover, &:active, &:focus {
+			color: @gold;
+		}
+	}
+}

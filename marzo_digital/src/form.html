@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Let’s get in touch!</title>
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+	<header class="header header--alt">
+		<div class="container header__wrapper">
+			<a href="index.html">
+				<div class="header__logo header__logo--white">
+					<picture>
+					    <source srcset="img/logo-white.svg"
+					        media="(max-width: 768px)">
+					    <img src="img/logo-full-white.svg" alt="Marzo.digital">
+					</picture>
+				</div>
+				<div class="header__logo header__logo--black">
+					<picture>
+					    <source srcset="img/logo-black.svg"
+					        media="(max-width: 768px)">
+					    <img src="img/logo-full-black.svg" alt="Marzo.digital">
+					</picture>
+				</div>
+			</a>
+			<p class="header__location header__location--outer">Prague, Czech Republic <strong>11:56</strong> AM</p>
+			<div class="menu">
+				<button class="button header__menu header__menu--open">
+					<span>Open</span>
+					<div class="header__menuIcon">
+						<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<circle cx="3" cy="3" r="3" fill="currentColor"/>
+							<circle cx="3" cy="13" r="3" fill="currentColor"/>
+							<circle cx="13" cy="3" r="3" fill="currentColor"/>
+							<circle cx="13" cy="13" r="3" fill="currentColor"/>
+						</svg>
+					</div>
+				</button>
+				<div class="menu__body">
+					<div class="menu__head">
+						<p class="header__location menu__location">Prague, <span>Czech Republic</span> <strong>11:56</strong> AM</p>
+						<button class="button header__menu header__menu--close">
+							<span>Close</span>
+							<div class="header__menuIcon header__menuIcon menu__close">
+								<img src="img/close-black.svg" width="14" height="14" alt="">
+							</div>
+						</button>
+					</div>
+					<nav class="menu__nav nav">
+						<div class="nav__main">
+							<a href="#" class="nav__link">Home</a>
+							<a href="#" class="nav__link">About</a>
+							<a href="#" class="nav__link">Portfolio</a>
+							<a href="#" class="nav__link">Contact</a>
+						</div>
+						<div class="nav__external">
+							<a href="mailto:hello@marzo.digital" class="nav__email nav__extLink">hello@marzo.digital</a>
+							<div class="nav__externalBody">
+								<a href="#" class="nav__extLink">behance</a>
+								<a href="#" class="nav__extLink">dribble</a>
+								<a href="#" class="nav__extLink">instagram</a>
+							</div>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="page contact">
+		<div class="container">
+			<h1 class="page__title">Let’s get in touch!</h1>
+			<form class="contact__form form">
+				<div class="form__body">
+					<div class="form__item form__item--name">
+						<p class="form__title">Hi! My name is</p>
+						<label class="form__label">
+							<input type="text" class="form__input" name="contact-name" maxlength="80" placeholder="Enter your name*">
+						</label>
+					</div>
+					<div class="form__item">
+						<p class="form__title">I work in</p>
+						<label class="form__label">
+							<input type="text" class="form__input" name="contact-work" maxlength="80" placeholder="Where you work*">
+						</label>
+					</div>
+					<div class="form__item">
+						<p class="form__title">I'm excited to discuss my project, which is related to </p>
+						<div class="form__radioGroup">
+							<input type="radio" class="vh" name="contact-type" id="contact-type-1" checked>
+							<label for="contact-type-1" class="form__label form__radioLabel">
+								Brand Design
+							</label>
+							<input type="radio" class="vh" name="contact-type" id="contact-type-2">
+							<label for="contact-type-2" class="form__label form__radioLabel">
+								Product Design
+							</label>
+							<input type="radio" class="vh" name="contact-type" id="contact-type-3">
+							<label for="contact-type-3" class="form__label form__radioLabel">
+								Website Design
+							</label>
+							<input type="radio" class="vh" name="contact-type" id="contact-type-4">
+							<label for="contact-type-4" class="form__label form__radioLabel">
+								Website Development
+							</label>
+						</div>
+					</div>
+					<div class="form__item">
+						<p class="form__title">My budget for this project falls within the range of </p>
+						<div class="form__radioGroup">
+							<input type="radio" class="vh" name="contact-budget" id="contact-budget-1" checked>
+							<label for="contact-budget-1" class="form__label form__radioLabel">
+								Small Project: $500 - $2,000
+							</label>
+							<input type="radio" class="vh" name="contact-budget" id="contact-budget-2">
+							<label for="contact-budget-2" class="form__label form__radioLabel">
+								Medium Project: $2,000 - $5,000
+							</label>
+							<input type="radio" class="vh" name="contact-budget" id="contact-budget-3">
+							<label for="contact-budget-3" class="form__label form__radioLabel">
+								Large Project: $5,000 - $10,000
+							</label>
+							<input type="radio" class="vh" name="contact-budget" id="contact-budget-4">
+							<label for="contact-budget-4" class="form__label form__radioLabel">
+								Enterprise Project: $10,000+
+							</label>
+						</div>
+					</div>
+					<div class="form__item form__item--email">
+						<p class="form__title">You can reach me at</p>
+						<label class="form__label">
+							<input type="email" class="form__input" name="contact-email" maxlength="60" placeholder="Enter your email*">
+						</label>
+					</div>
+					<div class="form__item">
+						<p class="form__title">and</p>
+						<label class="form__label form__label--wrong" data-error="Неверный номер">
+							<input type="tel" class="form__input" name="contact-phone" maxlength="12" placeholder="Enter your phone number">
+						</label>
+					</div>
+					<div class="form__item form__item--message">
+						<p class="form__title">I also have some additional information or a question to share:</p>
+						<label class="form__label">
+							<textarea class="form__input form__textarea" name="contact-message" maxlength="600" placeholder="Enter your message"></textarea>
+						</label>
+					</div>
+				</div>
+				<div class="form__footer">
+					<input type="checkbox" class="vh" name="contact-agree" id="contact-agree">
+					<label for="contact-agree" class="form__label form__checkboxLabel">
+						I agree with the Terms of <a href="policy.html">Privacy policy</a> 
+					</label>
+					<button disabled class="button form__submit form__submit--done">
+						<span>Send a request</span>
+					</button>
+				</div>
+			</form>
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__logo">
+				<img src="img/logo-full-black.svg" alt="Marzo.digital">
+			</div>
+			<div class="footer__content">
+				<div class="footer__main">
+					<h2 class="title footer__title">Reach out to us and let's get the conversation started!</h2>
+					<div class="footer__contact">
+						<p class="footer__contactCaption">Ready to bring your vision to life? Let's turn your ideas into reality</p>
+						<a href="#" class="label label--hoverFilled footer__discuss"><span>Discuss the project</span></a>
+					</div>
+					<div class="footer__contact">
+						<p class="footer__contactCaption">Or each out via email. We'll get back to you promptly!</p>
+						<a href="mailto:hello@marzo.digital" class="footer__link">hello@marzo.digital</a>
+					</div>
+				</div>
+				<nav class="footer__nav">
+					<a href="#" class="footer__navLink">Home</a>
+					<a href="#" class="footer__navLink">About</a>
+					<a href="#" class="footer__navLink">Portfolio</a>
+					<a href="#" class="footer__navLink">Contact</a>
+				</nav>
+				<div class="footer__address">
+					<h3 class="footer__caption">Address</h3>
+					<address>
+						Zvěřinova 3446/3,<br>
+						130 00 Praha 3,<br>
+						Česká Republika
+					</address>
+					<p>
+						<strong>IČO: 593476065</strong><br>
+						Marzo Digital s.r.o.<br>
+						Registered in Prague
+					</p>
+				</div>
+				<div class="footer__links">
+					<h3 class="footer__caption">Follow us</h3>
+					<a href="#" class="footer__link">behance</a>
+					<a href="#" class="footer__link">dribble</a>
+					<a href="#" class="footer__link">instagram</a>
+				</div>
+			</div>
+			<p class="footer__policy">© Marzo Digital 2023. All rights reserved, <a href="#">Privacy Policy</a></p>
+		</div>
+	</footer>
+	<script src="js/all.js"></script>
+</body>
+</html>

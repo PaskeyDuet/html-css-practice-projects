@@ -1,0 +1,7 @@
+@import "_variables.scss", "_normalize.scss", "_mixins.scss", "_fonts.scss",
+  "_reset.scss", "_media.scss", "_functions.scss";
+
+@import "./blocks/_general-containers.scss", "./blocks/_header.scss",
+  "./blocks/_menu.scss", "./blocks/_project-examples.scss",
+  "./blocks/_made-projects.scss", "./blocks/_general-containers.scss",
+  "./blocks/_about-me.scss", "./blocks/footer.scss", "./blocks/main-block.scss";

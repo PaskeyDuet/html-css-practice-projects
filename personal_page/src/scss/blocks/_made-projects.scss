@@ -1,0 +1,24 @@
+.made-projects {
+  @include row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 48px 32px;
+  .project-card {
+    @include col;
+    align-items: flex-start;
+    max-width: calc(100% / 2 - 32px);
+    @media (max-width: 794px) {
+      min-width: 100%;
+    }
+    &__image {
+      width: 100%;
+      margin-bottom: 25px;
+    }
+    h3 {
+      @include font("Labil-Grotesk-Medium", 20, 20, 140%);
+    }
+    p {
+      @include font("Labil-Grotesk-Regular", 20, 20, 140%);
+    }
+  }
+}

@@ -1,0 +1,183 @@
+.creative {
+	margin: 100px 0 86px;
+
+	&__pics {
+		width: 100%;
+		position: relative;
+	}
+
+	&__picItem {
+		border-radius: 10px;
+		position: absolute;
+		transition: transform .1s ease;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			border-radius: inherit;
+		}
+
+		&--red {
+			width: 342px;
+			height: 266px;
+			background-color: #C5112F;
+			top: 0;
+			left: 0;
+
+			.mmd-block({
+				display: none;
+			});
+		}
+
+		&--violet {
+			width: 406px;
+			height: 316px;
+			background-color: #2A2E8A;
+			top: 43px;
+			left: 114px;
+
+			.mmd-block({
+				top: 0;
+				left: 0;
+				z-index: 2;
+			});
+
+			.xs-block({
+				width: 231px;
+				height: 164px;
+			});
+		}
+
+		&--blue {
+			width: 342px;
+			height: 267px;
+			background-color: #0542CA;
+			top: 67px;
+			right: 204px;
+
+			.mmd-block({
+				display: none;
+			});
+		}
+
+		&--light-blue {
+			width: 406px;
+			height: 316px;
+			background-color: #1EA5DF;
+			right: 0;
+			top: 130px;
+
+			.mmd-block({
+				top: 170px;
+				width: 360px;
+				height: 240px;
+			});
+
+			.xs-block({
+				width: 167px;
+				height: 130px;
+				top: 88px;
+			});
+		}
+
+		&--green {
+			width: 406px;
+			height: 316px;
+			background-color: #1EDF54;
+			bottom: 0;
+			left: 0;
+
+			.mmd-block({
+				display: none;
+			});
+		}
+
+		&--light-violet {
+			width: 342px;
+			height: 266px;
+			background-color: #6B11C5;
+			left: 176px;
+			bottom: 96px;
+
+			.mmd-block({
+				left: 44px;
+				bottom: 0;
+				z-index: 2;
+			});
+
+			.xs-block({
+				width: 231px;
+				height: 164px;
+				left: 0;
+			});
+		}
+
+		&--orange {
+			width: 406px;
+			height: 316px;
+			background-color: #DF721E;
+			right: 128px;
+			bottom: 71px;
+
+			.mmd-block({
+				width: 360px;
+				height: 240px;
+				right: 40px;
+				bottom: 110px;
+				z-index: 1;
+			});
+
+			.xs-block({
+				width: 167px;
+				height: 130px;
+				bottom: 87px;
+				right: 0;
+			});
+		}
+
+		&--dark-blue {
+			width: 406px;
+			height: 316px;
+			background-color: #2A2E8A;
+			right: 0;
+			bottom: 0;
+
+			.mmd-block({
+				display: none;
+			});
+		}
+	}
+
+	&__info {
+		// padding: 38px 0 24px;
+		padding: 500px 0 460px;
+		text-align: center;
+		position: relative;
+		z-index: 10;
+
+		.xs-block({
+			padding: 280px 0;
+		});
+	}
+
+	&__title {
+		max-width: 474px;
+		margin: 0 auto;
+	}
+
+	&__link {
+		margin-top: 20px;
+		display: inline-flex;
+		padding: 13px 14px 13px 18px;
+		border: 1px solid @black;
+
+		img {
+			user-select: none;
+
+			&:first-child {
+				margin-right: 18px;
+			}
+		}
+	}
+}

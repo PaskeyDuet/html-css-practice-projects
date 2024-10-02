@@ -1,0 +1,24 @@
+.project-examples {
+  &__header {
+    @include col;
+    align-items: flex-start;
+
+    margin-bottom: 30px;
+    h2 {
+      margin: 0 0 10px;
+      @include font("Labil-Grotesk-Medium", 24, 48, 120%);
+    }
+    p {
+      @include font("Labil-Grotesk-Medium", 16, 20, 140%);
+
+      width: calc(100% / 3);
+      min-width: 343px;
+      @media (max-width: 768px) {
+        max-width: 392px;
+      }
+    }
+  }
+  &__made-projects {
+    margin-top: 75px;
+  }
+}

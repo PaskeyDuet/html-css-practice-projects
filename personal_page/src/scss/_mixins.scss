@@ -1,0 +1,54 @@
+@mixin col {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+@mixin row {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+@mixin font($font-name, $min: 16, $max: 24, $line-height) {
+  font-family: $font-name;
+  font-size: clamp(#{$min}px, #{calc($max / 1440 * 100)}vw, #{$max}px);
+  line-height: $line-height;
+}
+@mixin navigation {
+  box-shadow: 0px 12px 20px 0px rgba(0, 0, 0, 0.04);
+}
+@mixin reset-link {
+  color: inherit;
+  &,
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+@mixin reset-button {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+
+@mixin flex-center($isinline: false) {
+  @if $isinline {
+    display: inline-flex;
+  } @else {
+    display: flex;
+  }
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin abs-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+}
+
+@mixin square($size) {
+  width: $size;
+  aspect-ratio: 1;
+}

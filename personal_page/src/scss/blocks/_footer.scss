@@ -1,0 +1,28 @@
+footer {
+  width: 100%;
+  @include col;
+  h2 {
+    @include font("Labil-Grotesk-Medium", 48, 140, 110%);
+  }
+  button {
+    margin-top: 50px;
+    padding: 32px 50px;
+    color: $general-text-color;
+    @include font("Labil-Grotesk-Medium", 20, 20, 140%);
+    background-color: #141414;
+    border-radius: 40px;
+    border-color: #141414;
+    border: none;
+  }
+  .footer__bottom {
+    margin: 130px 0 20px;
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-around;
+
+    .footer__links {
+      display: flex;
+      gap: 40px;
+    }
+  }
+}
